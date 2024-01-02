@@ -1,0 +1,42 @@
+h1{
+    text-transform: capitalize;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    width: 90%;
+}
+
+/* Styling for the table */
+.contact-contant table{
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #bfdef3; 
+    color: #fff;
+    box-shadow: 1px 1px 5px #989898;
+}
+
+/* Styling for table headers */
+.contact-contant th{
+    background-color: #1f618d;
+    padding: 15px;
+    text-align: left;
+}
+
+/* Styling for table cells */
+.contact-contant td{
+    padding: 10px 13px;
+    text-align: left;
+    color: black;
+}
+
+/* Alternate row background color for better readability */
+.contact-contant tr:nth-child(even) {
+    background-color: #a8d3f0;
+}
+
+/* Add hover effect to rows */
+.contact-contant tr:hover td{
+    background-color: #2980b9;
+    color: white;
+}

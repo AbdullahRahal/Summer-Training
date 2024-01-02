@@ -1,0 +1,33 @@
+h1{
+    margin: 5%;
+}
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #133e70;
+    border-radius: 3%;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+label, input, textarea {
+    display: block;
+    width: 95%;
+}
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+}
+textarea {
+    height: 150px;
+    resize: none;
+}
+button {
+    background-color: #133e70;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}

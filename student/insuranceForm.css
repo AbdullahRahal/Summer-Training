@@ -1,0 +1,40 @@
+h1{
+    margin: 5%;
+}
+
+.main-container{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+}
+.container{
+    flex: 1;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 40%;
+    height: 45vh;
+    margin: 0 2vw;
+}
+.container p{
+    text-align: left;
+}
+.download-button {
+    display: inline-block;
+    background-color: #133e70;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+}
+  
+  .download-button i{
+    margin-right: 5px;
+  }
+  .Instructions{
+  text-align: left;
+  }

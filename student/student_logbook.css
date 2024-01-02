@@ -1,0 +1,119 @@
+h1{
+  margin: 5%;
+}
+/* Container for the two side-by-side divs */
+.container {
+    display: flex;
+    width: 90%;
+    margin: 5%;
+    justify-content: space-between;
+  }
+  
+  /* Style for the left div */
+  .left-div {
+    width: 50%;
+    height: 40vh;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style for the form elements */
+  .form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Style for the right div */
+  .right-div {
+    width: 45%;
+    height: 40vh;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  /* instruction div style */
+  .instructions ul, li{
+    line-height: 1.5;
+  }
+  
+  /* File input label style */
+  #fileInput {
+    display: none;
+  }
+  
+  label[for="fileInput"] {
+    cursor: pointer;
+    color: #3498db;
+    text-decoration: underline;
+  }
+  
+  /* Custom styling for the file input label on hover */
+  label[for="fileInput"]:hover {
+    color: #1e87d2;
+    text-decoration: underline;
+  }
+  
+  
+  .submit_btn{
+    margin: 5% auto;
+  }
+  .submit_btn input{
+    width: 100%;
+    padding: 11px 0;
+    background-color: #133e70;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    position: relative;
+    top: -5px;
+  }
+  .submit_btn input :hover{
+    background-color: #1e87d2;
+  }
+
+  .table-container {
+    margin: 5%;
+    width: 90%;
+    max-height: 240px;
+    overflow-y: scroll;
+}
+
+.table-container table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.table-container th, .table-container td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.table-container th {
+  background-color: #133e70;
+  color: white;
+  position: sticky;
+  top: 0;
+}
