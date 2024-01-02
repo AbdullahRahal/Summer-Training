@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log-In Page</title>
     <link rel="stylesheet" href="loginStyle.css" type="text/css">
+    <script src="translate.js" defer></script>
 </head>
 <body>
     <main>
         <div id="general">
             <div id="container">
-                <div>
-                    <select name="lang" id="lang">
-                        <option value="" selected><a href="#" data-lang="en">English</a></option>
-                        <option value=""><a href="#" data-lang="tr">Turkish</a></option>
+                <div class="language-select">
+                    <select id="language-select">
+                        <option value="en">English</option>
+                        <option value="tr">Turkish</option>
                     </select>
                 </div>
                 <div id="title">
@@ -23,7 +24,7 @@
                 </div>
                 <div id="div-form">
                     <form action="login.php" method="post">
-                        <h1 data-en="sign in" data-tr="TR">sign in</h1>
+                        <h1 data-en="sign in" data-tr="Sign in">sign in</h1>
                         <input type="email" name="username" class="input-login" placeholder="Email Address" required>
                         <input type="password" name="password" class="input-login" placeholder="Password" required>
                         <button type="submit" id="submit-btn">log in</button>

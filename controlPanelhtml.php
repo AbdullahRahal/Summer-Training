@@ -291,40 +291,40 @@ $adminEmail = $_SESSION['username'];
 
             <!-- section 4 - Programs -->
             <section id="section-4">
-                <h1 class="sec-h1">programs</h1>
+                <h1 class="sec-h1" data-en="programs" data-tr="programlar">programs</h1>
                 <div class="container-back">
                         <!-- Button to show the form for creating a new company -->
                         <div class="grid-container">
                             <div class="grid-item" onclick="showCreateCompanyForm('create-company-form')">
                                 <h1>+</h1>
-                                <h3>New Company</h3>
+                                <h3 data-en="New Company" data-tr="Yeni Şirket">New Company</h3>
                             </div>
                             <?php include 'display_companies.php'; ?>
                         </div>
                             <!-- Form for creating a new company -->
                             <form action="create_company.php" method="POST" id="create-company-form" class="hidden-form">
-                                <h1>Create New Company</h1>
+                                <h1 data-en="Create New Company" data-tr="Yeni Şirket Oluştur">Create New Company</h1>
                                 <div class="form-columns">
                                     <!-- Left Column - Company Information -->
                                     <div class="form-column">
                                         <div class="form-field">
-                                            <label for="company-name">Company Name</label>
+                                            <label for="company-name" data-en="Company Name" data-tr="Firma Adı">Company Name</label>
                                             <input type="text" id="company-name" name="company-name" class="create-com-input" required>
                                         </div>
                                         <div class="form-field">
-                                            <label for="workField">Working Field(s)</label>
+                                            <label for="workField" data-en="Working Field(s)" data-tr="Çalışma Alan(lar)ı">Working Field(s)</label>
                                             <input type="text" id="workField" name="workField" class="create-com-input" required>
                                         </div>
                                         <div class="form-field">
-                                            <label for="Website">Website</label>
+                                            <label for="Website" data-en="Website" data-tr="İnternet sitesi">Website</label>
                                             <input type="url" id="Website" name="Website" class="create-com-input" required>
                                         </div>
                                         <div class="form-field">
-                                            <label for="country">Country</label>
+                                            <label for="country" data-en="Country" data-tr="Ülke">Country</label>
                                             <input type="text" id="country" name="country" class="create-com-input" required>
                                         </div>
                                         <div class="form-field">
-                                            <label for="description">Work to be done</label>
+                                            <label for="description" data-en="Work to be done" data-tr="Yapılacak iş">Work to be done</label>
                                             <textarea id="description" name="description" rows="4" class="create-com-textarea" required></textarea>
                                         </div>
                                     </div>
@@ -332,52 +332,52 @@ $adminEmail = $_SESSION['username'];
                                     <!-- Right Column - Role Information -->
                                     <div class="form-column">
                                         <div class="form-field">
-                                            <label for="phone-number">Phone Number</label>
+                                            <label for="phone-number" data-en="Phone Number" data-tr="Telefon numarası">Phone Number</label>
                                             <input type="text" id="phone-number" name="phone-number" class="create-com-input" required>
                                         </div>
                                         <div class="form-field">
-                                            <label for="email">E-Mail</label>
+                                            <label for="email" data-en="E-Mail" data-tr="E-Posta">E-Mail</label>
                                             <input type="email" id="email" name="email" class="create-com-input" required>
                                         </div>
                                         <div class="form-field">
-                                            <label for="Fax">Fax</label>
+                                            <label for="Fax" data-en="Fax" data-tr="Faks">Fax</label>
                                             <input type="text" id="Fax" name="Fax" class="create-com-input" required>
                                         </div>
                                         <div class="form-field">
-                                            <label for="duration">Duration</label>
+                                            <label for="duration" data-en="Duration" data-tr="Süre">Duration</label>
                                             <input type="number" id="duration" name="duration" class="create-com-input" required>
                                         </div>
                                         <div class="form-field">
-                                            <label for="address">Address</label>
+                                            <label for="address" data-en="Address" data-tr="Adres">Address</label>
                                             <textarea id="address" name="address" rows="4" class="create-com-textarea" required></textarea>
                                         </div>
                                     </div>
 
                                     <!-- Third column - Company Supervisor -->
                                     <div class="form-column super">
-                                        <h3>Company Supervisor</h3>
+                                        <h3 data-en="Company Supervisor" data-tr="Şirket Sorumlusu">Company Supervisor</h3>
                                         <div class="form-field">
-                                            <label for="first-name">First Name</label>
+                                            <label for="first-name" data-en="First Name" data-tr="İlk adı">First Name</label>
                                             <input type="text" id="firstName" name="first-name" class="create-com-input" required>
                                         </div>
                                         <div class="form-field">
-                                            <label for="last-name">Last Name</label>
+                                            <label for="last-name" data-en="Last Name" data-tr="Soy isim">Last Name</label>
                                             <input type="text" id="lastName" name="last-name" class="create-com-input" required>
                                         </div>
                                         <div class="form-field">
-                                            <label for="sup-email">E-Mail</label>
+                                            <label for="sup-email"data-en="E-Mail" data-tr="E-Posta">E-Mail</label>
                                             <input type="email" id="supEmail" name="sup-email" class="create-com-input" required>
                                         </div>
                                         <div class="form-field">
-                                            <label for="supPosition">His/Her Position</label>
+                                            <label for="supPosition" data-en="His/Her Position" data-tr="Onun Pozisyonu">His/Her Position</label>
                                             <input type="text" id="supPosition" name="supPosition" class="create-com-input" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-actions">
-                                    <button type="reset">Reset</button>
-                                    <button type="submit" name="createCompanyForm">Create</button>
-                                    <button type="button" onclick="hideForm('create-company-form')">Cancel</button>
+                                    <button type="reset" data-en="Reset" data-tr="Sıfırla">Reset</button>
+                                    <button type="submit" name="createCompanyForm" data-en="Create" data-tr="Yaratmak">Create</button>
+                                    <button type="button" onclick="hideForm('create-company-form')" data-en="Cancel" data-tr="İptal etmek">Cancel</button>
                                 </div>
                             </form>
                         </div>

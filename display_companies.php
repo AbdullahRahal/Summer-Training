@@ -1,5 +1,6 @@
 <?php
 ob_start();
+error_reporting(0);
 include 'db_connect.php'; // Include the database connection details
 
 // Function to handle delete
@@ -12,7 +13,6 @@ function handleDelete($cid) {
     
     if ($stmt->affected_rows > 0) {
         header("Location: controlPanelhtml.php#section-4");
-        exit();
     }
 }
 
@@ -25,9 +25,9 @@ function handleUpdate($cid, $cname, $cfield, $ccountry, $cphone, $cwebsite, $cfa
     $stmt->execute();
     
     if ($stmt->affected_rows > 0) {
-        exit();
+        header("Location: controlPanelhtml.php#section-4");
     }else{
-        exit();
+        header("Location: controlPanelhtml.php#section-4");
     }
 }
 
@@ -104,8 +104,7 @@ if ($result && $result->num_rows > 0) {
         echo '</form>';
         }
     }
-
+    ob_end_flush();
     // Close connection
     $conn->close();
-    ob_end_flush(); 
     ?>
