@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-In Page</title>
+    <link rel="stylesheet" href="loginStyle.css" type="text/css">
+</head>
+<body>
+    <main>
+        <div id="general">
+            <div id="container">
+                <div>
+                    <select name="lang" id="lang">
+                        <option value="" selected><a href="#" data-lang="en">English</a></option>
+                        <option value=""><a href="#" data-lang="tr">Turkish</a></option>
+                    </select>
+                </div>
+                <div id="title">
+                    <h1>summer</h1>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/EMU_Cyprus.svg/1200px-EMU_Cyprus.svg.png" alt="EMU Logo" id="emu-logo">
+                    <h1>training</h1>
+                </div>
+                <div id="div-form">
+                    <form action="login.php" method="post">
+                        <h1 data-en="sign in" data-tr="TR">sign in</h1>
+                        <input type="email" name="username" class="input-login" placeholder="Email Address" required>
+                        <input type="password" name="password" class="input-login" placeholder="Password" required>
+                        <button type="submit" id="submit-btn">log in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Default language
+            let currentLanguage = localStorage.getItem('selectedLanguage') || 'en';
+        
+            // Function to update content based on the selected language
+            function updateContent() {
+                document.querySelectorAll('[data-en], [data-tr]').forEach(function (element) {
+                    const key = element.getAttribute('data-' + currentLanguage);
+                    if (element.tagName === 'A') {
+                        element.innerHTML = '<i class="fas fa-language banner-icons"></i> ' + key;
+                    } else {
+                        element.innerText = key;
+                    }
+                });
+            }
+        
+            // Event listener for language dropdown selection
+            document.getElementById('language-dropdown').addEventListener('click', function (event) {
+                if (event.target.tagName === 'A') {
+                    currentLanguage = event.target.getAttribute('data-lang');
+                    localStorage.setItem('selectedLanguage', currentLanguage);
+                    updateContent();
+                }
+            });
+        
+            // Initial content update
+            updateContent();
+        });
+    </script>
+</body>
+</html>

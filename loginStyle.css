@@ -1,0 +1,130 @@
+body{
+    background-image: url(https://www.emu.edu.tr/media/c/img_22543_3.jpg?1602832478);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+}
+body::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.25); /* Background color with opacity (adjust the last value) */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; /* Place the background layer behind the body content */
+}
+
+#general{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    width: 100%;
+}
+
+#container{
+    background-color: white;
+    height: 70%;
+    width: 50%;
+    border-radius: 10px;
+}
+
+#title{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    column-gap: 25px;
+}
+#title h1{
+    position: relative;
+    top: 20px;
+    text-transform: capitalize;
+    color: black;
+}
+#title img{
+    height: 120px;
+    width: 120px;
+}
+
+#lang{
+    padding: 3px 7px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: rgba(209, 209, 209, 0.381);
+    font-style: italic;
+}
+#lang option{
+    background-color: white;
+}
+
+#div-form{
+    display: flex;
+    justify-content: space-around;
+    height: 60%;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+form{
+    width: 50%;
+}
+#div-form h1{
+    text-align: center;
+    color: #0502a0;
+    text-transform: capitalize;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+.input-login{
+    display: block;
+    color: black;
+    margin: 25px 0;
+    padding: 15px 15px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    outline: 2px solid #ccc;
+    background-color: #ccc;
+    transition: outline-color 500ms;
+}
+.input-login:is(:focus, :valid){
+    outline-color: #0502a0;
+}
+
+/* .label-input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    translate: 10px 10px;
+    color: black;
+    transition: translate 500ms, scale 500ms;
+}
+.input-login:focus + .label-input, 
+.input-login:valid + .label-input{
+    padding-inline: 5px;
+    translate: 10px -14px;
+    scale: 0.8;
+    background-color: white;
+} */
+
+#submit-btn{
+    display: block;
+    padding: 12px 30px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #0300b0;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+#submit-btn:hover{
+    background-color: #02008c;
+
+}
