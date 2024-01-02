@@ -17,6 +17,18 @@
 #top-part p{
     text-align: left;
 }
+#lang{
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  border: none;
+  outline: none;
+}
+#lang option{
+  color: black;
+  font-weight: 600;
+}
+
 .progSearch{
     width: 30vw;
     padding: 12px 15px;

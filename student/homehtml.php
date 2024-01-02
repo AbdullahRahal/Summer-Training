@@ -33,7 +33,7 @@ $studentSemester = $_SESSION['student_semester'];
                     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/EMU_Cyprus.svg/300px-EMU_Cyprus.svg.png" alt="EMU Logo">
                 </div>
                 <div class="headerdivs">
-                    <h2 data-en="EMU Internship" data-tr="ASDF" >EMU Internship</h2>
+                    <h2 data-en="EMU Internship" data-tr="DAU Staj" >EMU Internship</h2>
                 </div>
             </div>
             <div class="top-bar-icon-container">

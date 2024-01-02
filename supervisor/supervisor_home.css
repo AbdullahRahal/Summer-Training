@@ -19,22 +19,18 @@ h1{
     max-height: 50%;
     max-width: 90%;
 }
-.cards:nth-child(1) {
-    grid-column: 1; /* This spans two columns */
-    grid-row: 1 / span 2; /* This places it on the second row */
-    max-height: 60%;
-    width: 40vw;
-}
-.cards:nth-child(2){
-    height: 33vh;
-    width: 35vw;
-}
-.cards:last-child{
-    position: relative;
-    top: -30%;
-    height: 33vh;
-    width: 35vw;
-}
+#language-select{
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    border: none;
+    outline: none;
+  }
+  #language-select option{
+    color: black;
+    font-weight: 600;
+  }
+
 
 
 /* scroller hidder */

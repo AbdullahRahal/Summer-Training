@@ -106,7 +106,7 @@ $csPhone = $_SESSION['cs_phone'];
                         </ul>
                     </div>
                 </div>
-                <div class="cards">
+                <div class="cards" >
                     <h1 data-en="Internees" data-tr="Bildirimler">Internees</h1>
                     <div class="detail-container-side">
                         <?php include 'display_std.php'; ?>

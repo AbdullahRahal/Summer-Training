@@ -22,6 +22,18 @@ header{
     box-shadow: 5px 0 5px rgba(0, 0, 0, 0.1); /* Light shadow to the right */  
 }
 
+#language-select{
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    border: none;
+    outline: none;
+  }
+  #language-select option{
+    color: black;
+    font-weight: 600;
+  }
+
 #logodiv{
     display: flex;
     justify-content: center; /* Center items horizontally */
