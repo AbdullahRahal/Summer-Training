@@ -7,9 +7,9 @@ for the database part we included a file that can be imported in your database t
 the languages that has been used to create this code are [HTML, CSS, JS, PHP AND MYSQL].
 
 the cridets for this project goes to all of:
-Abdullah Rahal
-Anas Mawed
-Sulayman Alruwais
-Hussein Alkara
+Abdullah Rahal,
+Anas Mawed,
+Sulayman Alruwais,
+Hussein Alkara.
 
 as it was a teamwork effort everyone who worked on this project did a huge part in it.
