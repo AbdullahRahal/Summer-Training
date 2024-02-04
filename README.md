@@ -5,3 +5,11 @@ as in for better understanding for the code it's commentet line by line as we fi
 for who ever is enterested in viewing the code start viewing it at the Login.html script it's where everysession in the code will start going after that one by one depending on the user role.
 for the database part we included a file that can be imported in your database table for test runs.
 the languages that has been used to create this code are [HTML, CSS, JS, PHP AND MYSQL].
+
+the cridets for this project goes to all of:
+Abdullah Rahal
+Anas Mawed
+Sulayman Alruwais
+Hussein Alkara
+
+as it was a teamwork effort everyone who worked on this project did a huge part in it.
